@@ -25,7 +25,42 @@ module.exports = {
           },
           'css-loader',
         ],
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+      {
+        test: /font-awesome\.config\.js/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'font-awesome-loader' }
+        ]
+      },
+
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: "url-loader" 
+      },
+      { 
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader" 
+      },
+
     ]
   },
   plugins: [
@@ -54,7 +89,7 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery"
-  })
+    })
   ],
-  
+
 };

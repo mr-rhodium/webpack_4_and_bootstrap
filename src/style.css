@@ -1,6 +1,117 @@
 
-.h3 { color: green; padding-left : 50px; } 
-.test {
-    background-color:#99cc00;
-    padding:10px;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+.html{height: 100vh;}
+.body {position:relative; min-height:100vh;}
+
+.sidebar {
+ 
+    height: 100vh;
+  }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-left: -15px;
+  }
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+
+  .social-block {
+    text-decoration: none;
+    /* color: #666; */
+       position: relative;
+  }
+
+.img-top {
+
+    margin-top: 15px;
+  
+  }
+
+/* .bg-color {
+    background-color: rgba(247, 219, 144, 0.075);
+} */
+
+.avator {
+    width: 100px;
+    height: 100px;
+    /* box-shadow: 2px 2px 2px 2px lightgray; */
+/* }
+
+.col-raith {
+    color: black;
+    background-color: rgba(255, 171, 115, 0.644);
+    /* z-index: 2; */
 }
+
+.col-left {
+    color: black;
+    /* background-color: cadetblue; */
+    
+    background-color: rgba(0, 105, 88, 0.904);
+
+
+}
+ */
+
+
+.bek-left {
+    color: darkorange;
+    background-color: darkred;
+}
+
+
+.back-raith {
+    background-image: url("https://wondersholidays.com/wp-content/uploads/2019/07/kiev-1.jpg");
+    background-color: rgb(2, 35, 124);
+}
+
+.test {
+  
+    background-color: rgba(3, 26, 90, 0.116);
+}
+
+
+@media (max-width: 767px) {
+    .column {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .column {
+        width: 50%;
+    }
+}
+@media (min-width: 1025px) {
+    .column {
+        width: 25%;
+    }
+}
+
+h5 { font-family: 'Roboto', sans-serif; }
+
+
+.sentenceA p
+{
+    font-family: "Roboto";
+    font-style: "oblique";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sentenceB p
+{
+  font-family: "Open Sans";
+}        
+
+.sentenceC p
+{
+   font-family: "Roboto", "Open Sans";
+}  
